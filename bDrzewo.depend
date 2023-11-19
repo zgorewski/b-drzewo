@@ -1,0 +1,18 @@
+# depslib dependency file v1.0
+1700423565 source:d:\projektstudia\bdrzewo\odczyt.cpp
+	<iostream>
+	<fstream>
+	<string>
+	<sstream>
+	"funkcje.h"
+
+1700423174 d:\projektstudia\bdrzewo\funkcje.h
+	<iostream>
+	<fstream>
+	<string>
+	<sstream>
+
+1700423211 source:d:\projektstudia\bdrzewo\main.cpp
+	<iostream>
+	"funkcje.h"
+
