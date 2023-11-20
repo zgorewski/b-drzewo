@@ -6,5 +6,5 @@
 
 using namespace std;
 
-void Odczyt();
+void Odczyt(char fileName[]);
 

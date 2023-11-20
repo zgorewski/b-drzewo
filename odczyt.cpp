@@ -1,22 +1,16 @@
 #include <iostream>
 #include <fstream>
 #include <string>
-#include <sstream>
 #include "funkcje.h"
 
 using namespace std;
 
 
-void Odczyt(){
+void Odczyt(char fileName[]){
 
-	string fileName;
 	bool valid = true;
 
 	while(valid){
-
-		cout << "Podaj nazwe pliku: ";
-		cin >> fileName;
-
 		fstream file;
 		file.open(fileName);
 
@@ -33,6 +27,6 @@ void Odczyt(){
 		else{
 			cout << "Sprawdz czy plik znajduje sie w odpowiedniej lokalizacji" << endl;
 		}
-
+        valid = false;
 	}
 }

@@ -1,9 +1,10 @@
 #include <iostream>
-#include "funkcje.h"
+#include "odczyt.cpp"
 
 using namespace std;
 
-int main()
+int main(int argc, char *argv[])
 {
-    Odczyt();
+    for(int i=1; i<argc; i++)
+        Odczyt(argv[i]);
 }
