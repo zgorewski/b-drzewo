@@ -1,7 +1,24 @@
 #include <iostream>
 #include "funkcjeDef.h"
+#include <stdlib.h>
 
 using namespace std;
+
+struct node {
+    int data;
+    struct node *left;
+    struct node *right;
+};
+
+struct  node *newNode(int data) {
+    struct node *node = (struct node *)malloc(sizeof(struct node));
+
+    node->data = data;
+
+    node->left = NULL;
+    node->right = NULL;
+    return (node);
+};
 
 int main(int argc, char *argv[])
 {
@@ -29,7 +46,8 @@ int main(int argc, char *argv[])
 
         switch (wybor) {
             case 1:
-                if (argc > 1) {
+                system("cls");
+                if(argc > 1) {
                     for (int i = 1; i < argc; i++)
                         Odczyt(argv[i]);
                 } else {
@@ -40,21 +58,26 @@ int main(int argc, char *argv[])
                 }
                 break;
             case 2:
+                system("cls");
                 cout << "NIE MAM JESZCZE FUNKCJI" << endl;
                 break;
             case 3:
+                system("cls");
                 cout << "NIE MAM JESZCZE FUNKCJI" << endl;
                 break;
             case 4:
+                system("cls");
                 cout << "NIE MAM JESZCZE FUNKCJI" << endl;
                 break;
             case 5:
+                system("cls");
                 cout << "NIE MAM JESZCZE FUNKCJI" << endl;
                 break;
             case 6:
                 running = false;
                 break;
             default:
+                system("cls");
                 cout << "Niepoprawne dane wejsciowe." << endl;
         }
     }
